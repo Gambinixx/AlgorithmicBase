@@ -11,7 +11,7 @@ void insertion_sort(int arr[], int left, int right) {
     for (int i = 1; i < n; i++) {
         int key = local_arr[i];
         int j = i - 1;
-        while (j >= left && local_arr[j] > key) {
+        while (j >= 0 && local_arr[j] > key) {
             local_arr[j + 1] = local_arr[j];
             j--;
         }
